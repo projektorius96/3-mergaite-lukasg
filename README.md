@@ -9,7 +9,7 @@ _29 group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at [GitHub Pages]()
+Site published at [GitHub Pages](https://projektorius96.github.io/3-mergaite-lukasg/)
 
 Design: [Mergaite](https://cdn.discordapp.com/attachments/648536139677958156/648860692459290634/unknown.png)
 
