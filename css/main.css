@@ -1,0 +1,109 @@
+:root {
+  --parent-width:800px;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: inline-block;
+  width: var(--parent-width);
+  margin-left: calc((100% - 800px) / 2);
+  margin-top: 20px;
+}
+
+header > img {
+  float: left;
+  height: 50px;
+}
+
+nav {
+  float: right;
+  margin-top: 10px;
+}
+
+a {
+  float: left;
+  padding: 5px 13px;
+  color: #9d9d9d;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+a:last-of-type {
+  border-color: #9d9d9d;
+  margin-left: 30px;
+  padding: 5px 20px;
+  border-radius: 16px;
+}
+
+main {
+  display: inline-block;
+  width: var(--parent-width);
+  margin-left: calc((100% - var(--parent-width)) / 2);
+  margin-top:70px;
+}
+
+main > div {
+  width: 40%;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 70px;
+  color: #9d9d9d;
+}
+
+h1 {
+  /* display block = **
+  **display: inline-block;
+  **width: 100%;    */
+  margin: 0;
+  font-size: 100px;
+  line-height: 124px; 
+
+}
+
+p {
+  /* display block = **
+  **display: inline-block;
+  **width: 100%;    */
+  font-size: 28px;
+  line-height: 35px; 
+}
+
+main > img {
+  width: 50%;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/* RWD playground : */
+
+@media screen and (max-width:768px) { /* Between 0px and 768px do : */
+  header {display: none;}
+  main > * {
+    clear: both;
+    position: relative;
+    left:25%;
+  }
+  main > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:384px) { /* Between 0px and 384px do : */
+  header {display: none;}
+  main > * {
+    clear: both;
+    position: relative;
+    left:37.5%; /* = 25% + (25% / 2) */
+  }
+  main > div {
+    width: 50%;
+  }
+}

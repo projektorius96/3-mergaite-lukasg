@@ -1,132 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaite</title>
-    <style>
-    body {
-        /* background-image: url("./mergaite.png"); */
-        background-color: #F8F8F8;
-    }
-
-    body, body > * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        }
-
-    header {
-        color:white;
-        background-color: rgb(0, 0, 0);
-        display: inline-block;
-        padding: 20px;
-        z-index: 999;
-        position: absolute; /* indepdenent */
-        top: 60px;
-        margin-left: 6%;
-    }
-
-    nav {
-        /* background-color: red;  just for orientation + double checked children elements do not eat of parent height : will remove later */
-        /* width: auto;  nav itself is block, but due to _display:inline_ of _content_ we must explicitly define block within 100% of width */
-        display:inline-block; /* fixes UL element that eats NAV height */
-        margin-top: 60px;
-        margin-left: 60%;
-    }
-
-    nav > ul > * {
-        display: inline-block; /* ISSUE 2 [SOLVED] : before it was :inline that used to break Sign in button whilst browser resized */
-    }
-    
-    ul {
-        margin: 0;
-        padding: 0;
-        color: rgb(120, 120, 120);
-        /* background-color: yellow;  */
-        float:right; 
-        position: relative;
-        top: -5px;
-    }
-
-    ul > * {
-        /* position: relative;
-        left: -20px; */
-        margin-right: 50px;
-        color: rgb(120, 120, 120);
-        font-size: 1rem;
-        font-weight: 400;
-        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    ul > li:nth-child(5) > a:link {/* Sign in button */
-        overflow: auto;
-        text-decoration: none;
-        color: inherit;
-        border:2px solid rgb(120, 120, 120);
-        padding: 5px 15px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 16px;
-        clear: both;
-    }
-    
-    main {
-        clear:both; /* make sure main is unfloated with accordance to all above */
-        /* display: inline-block; ISSUE 1 [SOLVED when commented this prop out] : aside did not float L/R each side */
-    }
-
-    aside#left > p {
-        padding: 0;
-        margin: 0;
-        vertical-align: middle;
-        font-size: 6rem;
-        font-weight: 600;
-        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-        word-wrap: break-word;
-        position: relative;
-        top: 120px;
-        left: 60px;
-    }
-
-    aside#left {
-        display: inline-block;
-        float: left;
-        margin-top: 60px;
-        margin-left: 6%;
-        width: 40%;
-        height: 500px;
-        /* border: 2px solid red; temp */
-    }
-    
-    /* Gap width between aside left and right is equal to 4% in MAIN */
-    
-    aside#right {
-        display: inline-block;
-        float: right;
-        margin-top: 60px;
-        margin-right: 10%;
-        width: 40%;
-        height: 500px;
-        /* border: 2px solid red; temp */
-    }
-    </style>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <header>LOGO</header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Track</li>
-            <li>Library</li>
-            <li>Community</li>
-            <li style="margin-left:10px ;"><a href="#">Sign in</a></li>
-        </ul>
-    </nav>
+    <header>
+        <img src="./img/logo.png" alt="logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Tracks</a>
+            <a href="#">Library</a>
+            <a href="#">Community</a>
+            <a href="#">Sign in</a>
+        </nav>
+    </header>
     <main>
-        <aside id="left"><p>404 Lorem impsum</p></aside>
-        <aside id="right"><img src="veidukas.png"></aside>
+        <div>
+            <h1>404</h1>
+            <p>Try next year</p>
+        </div>
+        <img src="./img/mergaite.png" alt="liudeselis">
     </main>
 </body>
+
 </html>
